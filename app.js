@@ -15,6 +15,7 @@ function createPassword() {
   const lengthPrompt = prompt(
     "How long would you like your password to be? (8-128 characters)"
   );
+  // If the prompt critera is met the function will continue else a alert will be shown
   if (lengthPrompt < 8 || lengthPrompt > 128) {
     alert("Password must be between 8-128 characters!");
   } else {
@@ -27,7 +28,9 @@ function createPassword() {
     const numConfirm = confirm(
       "Would you like your password to contain numbers? (Yes or no)"
     );
+    // This will reset the mainChars every time the password is generated so previous inputs don't remain
     let mainChars = "abcdefghijklmnopqrstuvwxyz";
+    // if the prompt is answered "yes" then include the associated content, else add nothing
     if (capConfirm == true) {
       mainChars += capChars;
     } else {
@@ -43,6 +46,7 @@ function createPassword() {
     } else {
       mainChars += "";
     }
+    //generate password
     const passwordLength = lengthPrompt;
     let password = "";
     for (var i = 0; i < passwordLength; i++) {
