@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Background */
+.main {
+  min-height: 100vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    16deg,
+    rgb(255, 255, 255) 9%,
+    rgb(82, 44, 189) 100%
+  );
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Content */
+
+.generator {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 13rem;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+.generator p {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 2rem 5rem;
+  border: black 2px solid;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+
+button:hover {
+  background: rgb(98, 67, 185);
+  color: white;
+}
+
+.generator h1,
+p,
+button {
+  margin: 3rem;
+  font-family: "Oswald", sans-serif;
+}
+
+button img {
+  height: 2rem;
+}
+
+.password textarea {
+  padding: 2rem 10rem;
+  margin: 2rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Media queries */
+@media screen and (max-width: 1810px) {
+  .illus {
+    display: none;
+  }
+  .main {
+    align-items: center;
+    justify-content: center;
+  }
+  .generator {
+    padding-top: 0rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .generator h1 {
+    text-align: center;
+  }
+  .generator input {
+    width: 90%;
+  }
+}
