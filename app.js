@@ -3,7 +3,7 @@ const button = document.querySelector(".press");
 
 const capChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const numChars = "0123456789";
-const specChars = "!@#$%^&*()_+?><:{[]";
+const specChars = "!@#$%^&*()_+?><:;{}[]";
 
 //Event Listeners
 
