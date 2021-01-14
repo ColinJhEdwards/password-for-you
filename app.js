@@ -17,7 +17,9 @@ function createPassword() {
   );
   // If the prompt critera is met the function will continue else a alert will be shown
   if (lengthPrompt < 8 || lengthPrompt > 128) {
-    alert("Password must be between 8-128 characters!");
+    alert("Password length must be between 8-128 characters!");
+  } else if (isNaN(lengthPrompt)) {
+    alert("Password length must be a numerical value!");
   } else {
     const capConfirm = confirm(
       "Would you like your password to contain capital letters? (Yes or No)"
