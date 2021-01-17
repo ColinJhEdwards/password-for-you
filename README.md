@@ -4,4 +4,4 @@ A random password generator where you can specify the criteria, such as length, 
 
 [Link to deployed application] https://colinjhedwards.github.io/password-for-you/
 
-![Screenshot of website](images/pagePreview.png)
+![Screenshot of website](Images/pagePreview.png)
